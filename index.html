@@ -2,17 +2,26 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>품질관리팀 체크시트 종합</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 40px;
       background-color: #f9f9f9;
+      margin: 0;
     }
     h1 {
       margin-bottom: 30px;
+      font-size: 24px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .link-card {
+      display: block;
       background-color: #fff;
       border: 1px solid #ddd;
       padding: 20px;
@@ -20,40 +29,51 @@
       margin-bottom: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       transition: transform 0.2s;
-      width: 600px;
+      width: 100%;
+      max-width: 600px;
+      box-sizing: border-box;
+      text-decoration: none;
+      color: inherit;
     }
     .link-card:hover {
       transform: scale(1.02);
     }
-    a {
-      text-decoration: none;
-      color: #007BFF;
-      font-size: 18px;
+    .link-card .title {
+      font-size: 20px;
       font-weight: bold;
+      color: #007BFF;
     }
-    p {
+    .link-card .description {
       margin-top: 5px;
+      font-size: 16px;
+      color: #555;
+    }
+    .no-link .title {
+      color: #555;
+    }
+    .no-link {
+      cursor: default;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>📋 품질관리팀 체크시트 종합</h1>
 
-  <h1>📋 품질관리팀 체크시트 종합</h1>
+    <a href="https://knagbyeongju-123.github.io/QC_process_checksheet/" target="_blank" class="link-card">
+      <div class="title">1. 순회검사 체크시트</div>
+      <p class="description">현장 가동 상태 및 외관, 자주검사 항목 점검용</p>
+    </a>
 
-  <div class="link-card">
-    <a href="https://knagbyeongju-123.github.io/QC_process_checksheet/" target="_blank">1. 순회검사 체크시트</a>
-    <p>현장 가동 상태 및 외관, 자주검사 항목 점검용</p>
+    <a href="https://knagbyeongju-123.github.io/QC_machine_daily_check/" target="_blank" class="link-card">
+      <div class="title">2. 검사기 일상점검 체크시트</div>
+      <p class="description">검사기 점검 및 설정 상태 확인</p>
+    </a>
+
+    <div class="link-card no-link">
+      <div class="title">3. 측정실 일상점검</div>
+      <p class="description">※ 링크 없음</p>
+    </div>
   </div>
-
-  <div class="link-card">
-    <a href="https://knagbyeongju-123.github.io/QC_machine_daily_check/" target="_blank">2. 검사기 일상점검 체크시트</a>
-    <p>검사기 점검 및 설정 상태 확인</p>
-  </div>
-
-  <div class="link-card">
-    <span style="color: #555; font-weight: bold; font-size: 18px;">3. 측정실 일상점검</span>
-    <p>※ 링크 없음</p>
-  </div>
-
 </body>
 </html>
