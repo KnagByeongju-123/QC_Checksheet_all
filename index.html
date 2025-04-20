@@ -29,7 +29,7 @@
       margin-bottom: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       transition: transform 0.2s;
-      width: 66.666%; /* 기본적으로 화면 폭의 2/3 */
+      width: 66.666%;
       max-width: 600px;
       box-sizing: border-box;
       text-decoration: none;
@@ -43,6 +43,9 @@
       font-weight: bold;
       color: #007BFF;
     }
+    .link-card.green .title {
+      color: #2e7d32;
+    }
     .link-card .description {
       margin-top: 5px;
       font-size: 16px;
@@ -54,7 +57,6 @@
     .no-link {
       cursor: default;
     }
-    /* 작은 화면(모바일)에서는 카드가 화면 꽉 차도록 설정 */
     @media (max-width: 600px) {
       body {
         padding: 20px;
@@ -76,15 +78,21 @@
       <p class="description">현장 가동 상태 및 외관, 자주검사 항목 점검용</p>
     </a>
 
+    <a href="https://docs.google.com/spreadsheets/d/1Cn9CbYhcqGMHRNu5REw5jnPSg5Vm_UBnzGteylZVOIU/edit?usp=drive_link" target="_blank" class="link-card green">
+      <div class="title">1-1. 순회검사 조회</div>
+      <p class="description">현장 순회 시 검사 체크리스트를 조회할 수 있는 문서입니다.</p>
+    </a>
+
     <a href="https://knagbyeongju-123.github.io/QC_machine_daily_check/" target="_blank" class="link-card">
       <div class="title">2. 검사기 일상점검 체크시트</div>
       <p class="description">검사기 점검 및 설정 상태 확인</p>
     </a>
 
-    <div class="link-card no-link">
-      <div class="title">3. 측정실 일상점검</div>
-      <p class="description">※ 링크 없음</p>
-    </div>
+    <a href="https://docs.google.com/spreadsheets/d/1BNQetsALRy1HeuE6CrjdUwal0xaRVt2B7B62ZqG3cXU/edit?usp=drive_link" target="_blank" class="link-card green">
+      <div class="title">2-1. 검사기 일상점검 조회</div>
+      <p class="description">검사기기의 상태 점검 및 일일 확인 항목 확인용 문서입니다.</p>
+    </a>
+
   </div>
 </body>
 </html>
